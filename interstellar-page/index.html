@@ -1,0 +1,113 @@
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <nav class="navbar">
+      <h1 class="logo">FILM</h1>
+      <ul class="nav-links">
+        <li class="ativar"><a href="#"></a>Home</li>
+        <li><a href="#sobre">Sobre</a></li>
+        <li><a href="#sinopse">Sinopse</a></li>
+        <li><a href="#curiosidades">Curiosidades</a></li>
+        <li class="botao">
+          <a href="https://www.primevideo.com/detail/0GURDFFNEFFK5UUUGQ3JT3HN1T/ref=atv_dp_share_mv" target="_blank">Assistir</a>
+        </li>
+      </ul>
+    </nav>
+
+    <img src="./imagem/menub.png" class="botao-menu" alt="menu image" />
+
+    <header>
+      <div class="conteudo">
+        <h2>Conheça esse fantástico filme</h2>
+        <div class="linha"></div>
+        <h1>INTERSTELLAR</h1>
+        <a href="#sobre" class="botao">Ver Mais</a>
+      </div>
+    </header>
+
+    <!-- aba dois -->
+
+    <section class="about" id="sobre">
+      <div class="titulo">
+        <h1>SOBRE</h1>
+        <div class="linha"></div>
+      </div>
+
+      <div class="row">
+        <div class="coluna">
+          <h4>Diretor</h4>
+          <p>
+            Interstellar é um filme anglo-americano de ficção científica
+            dirigido pelo diretor, roteirista e produtor britânico Christopher
+            Nolan.
+          </p>
+          <a href="https://pt.m.wikipedia.org/wiki/Christopher_Nolan" class="botao" target="_blank">Ver Mais</a>
+        </div>
+        <div class="coluna">
+          <h4>Elenco</h4>
+          <p>
+            O filme é estrelado por Matthew McConaughey, Anne Hathaway, Jessica
+            Chastain, Bill Irwin, Mackenzie Foy, Matt Damon, John Lithgow e
+            Michael Caine.
+          </p>
+          <a href="https://www.google.com/search?si=AC1wQDDfIveugwXgSwql0MupFx-AyduOKzo9hefjRWhiXYp3trna6foAB24AHVRBLooEkEtXNq5Kl4Gf3Q5_eXcdX-Ota0Ou_H7VwjWHOFR-4PssGTOu8EdDkbQxvOmsDgRgIf5xWCwNX4YkHYo7zpJ907AwEriZKl9ZNI7pt8kCzaI2Y4xxQnsVck9eZ4Lhj6B2NjuOEpArmDbWj2JTWkC2Ubj9-NRA-UZg3z1kgrQwraYJxzgkZ-hSI5TpzrGCKZKKW9aH-xk-07cSaHZg3BSoYpJrklYSzO48RlmXeDsRHTx_QjDLR3AzIw4GpXZPgfOHTHESoecseoZ2ikpd2aNz2oCguYh3MxfvOJ0YKE0vzWP8WxLfc2jfa0lJ51pvdJs893_yjFDiDHdOn_437yryTOFkrWwm7aEyDDnQuKxp_nYnXEUbAWuxwbb0n2QXz59n-OALQ_Xtk7VHg8jH-t73G3tDlvfWK2KuminTPmkrxDX6Jey7olLNpo4erbJpYJboLnV8gWF0Fb-uK38z60NAAvTSdh5n7epRJSfF2SJvxD_v1BKqzODd8_282QLKoa6tccwpGo-g&hl=pt-BR&q=elenco+de+interstellar&kgs=8b84fe38d5843aeb&shndl=17&source=sh/x/kp/osrp/4&entrypoint=sh/x/kp/osrp"
+            class="botao" target="_blank">Ver Mais</a>
+        </div>
+      </div>
+    </section>
+
+    <section class="synopsis" id="sinopse">
+      <div class="synopsis-conteudo">
+        <h1>SINOPSE</h1>
+        <div class="linha"></div>
+        <p>
+          As reservas naturais da Terra estão chegando ao fim e um grupo de
+          astronautas recebe a missão de verificar possíveis planetas para
+          receberem a população mundial, possibilitando a continuação da
+          espécie. Cooper é chamado para liderar o grupo e aceita a missão
+          sabendo que pode nunca mais ver os filhos. Ao lado de Brand, Jenkins e
+          Doyle, ele seguirá em busca de um novo lar.
+        </p>
+        <a href="https://m.imdb.com/title/tt0816692/" class="botao" target="_blank">Ver Mais</a>
+      </div>
+    </section>
+
+    <section class="curious" id="curiosidades">
+      <div class="row">
+        <div class="coluna coluna-cont">
+          <h1>CURIOSIDADES</h1>
+          <div class="linha"></div>
+          <p>
+            Diversas cidades foram escolhidas para as gravações, que duraram
+            cerca de quatro meses. A província de Alberta no Canadá, Islândia e
+            Los Angeles foram palco das gravações. Em todas essas cidades Nolan
+            levou pelo menos uma centena de funcionários, além de contratar
+            vários outros moradores locais, o que movimentou bastante a economia
+            e gerou empregos nessas regiões.
+          </p>
+          <a href="https://www.adorocinema.com/filmes/filme-114782/curiosidades/" class="botao" target="_blank">Ver Mais</a>
+        </div>
+      </div>
+    </section>
+    <footer>
+      <p>Feito por Maria Tereza</p>
+      <p></p>
+      <p>Copyright ©️ 2022</p>
+    </footer>
+
+    <script>
+      const menuBotao = document.querySelector(".botao-menu");
+      const navlinks = document.querySelector(".nav-links");
+
+      menuBotao.addEventListener("click", () => {
+        navlinks.classList.toggle("mobile-menu");
+      });
+    </script>
+  </body>
+</html>

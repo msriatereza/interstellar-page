@@ -1,0 +1,278 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: Arial, Helvetica, sans-serif;
+}
+@font-face {
+  font-family: fonte;
+  src: url(./fonte/ethnocentric\ rg.otf);
+}
+
+.ativar {
+  color: #0d3b66;
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+body,
+html {
+  overflow-x: hidden;
+}
+header {
+  width: 100vw;
+  height: 100vh;
+  background-color: black;
+  background-position: bottom;
+  background-size: cover;
+  display: flex;
+  align-items: flex-end;
+  justify-content: center;
+}
+
+.navbar {
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  padding: 20px;
+  color: whitesmoke;
+}
+
+.nav-links {
+  display: flex;
+  align-items: center;
+}
+a {
+  color: white;
+}
+
+.nav-links li {
+  margin: 0 30px;
+}
+
+ul {
+  list-style: none;
+}
+
+a {
+  text-decoration: none;
+}
+
+.conteudo {
+  margin-bottom: 150px;
+  color: whitesmoke;
+  text-align: center;
+}
+
+.conteudo h2 {
+  font-size: 4vmin;
+}
+
+.linha {
+  width: 150px;
+  height: 4px;
+  background: #0d3b66;
+  margin: 10px auto;
+  border-radius: 5px;
+}
+
+.conteudo h1 {
+  font-size: 7vmin;
+  margin-top: 50px;
+  margin-bottom: 30px;
+  font-family: fonte;
+}
+
+.botao {
+  padding: 8px 15px;
+  background: #0d3b66;
+  border-radius: 30px;
+  color: whitesmoke;
+}
+
+.botao-menu {
+  position: absolute;
+  top: 30px;
+  right: 30px;
+  width: 40px;
+  cursor: pointer;
+  display: none;
+}
+
+/*aba dois*/
+
+section {
+  width: 80%;
+  margin: 80px auto;
+}
+.titulo {
+  text-align: center;
+  font-size: 4vmin;
+  color: #134074;
+  font-family: fonte;
+}
+.titulo h1 {
+  font-family: fonte;
+}
+
+.row {
+  display: flex;
+  align-items: center;
+  width: 100%;
+  justify-content: space-between;
+}
+.row .coluna {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+.about .row {
+  margin-top: 50px;
+}
+h4 {
+  font-size: 3vmin;
+  color: #134074;
+  margin: 20px auto;
+  font-family: fonte;
+}
+p {
+  color: #7c7c7c;
+  padding: 0px 40px;
+}
+.about .botao {
+  margin-top: 30px;
+}
+.synopsis {
+  width: 100%;
+  height: 100vh;
+  background-image: url(https://www.pixelstalk.net/wp-content/uploads/images6/Space-Interstellar-Wallpaper-HD.jpg);
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  align-items: center;
+}
+.synopsis-conteudo {
+  width: 60%;
+  padding: 50px;
+  color: whitesmoke;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+}
+.synopsis-conteudo h1 {
+  font-size: 7vmin;
+  font-family: fonte;
+}
+.synopsis-conteudo .linha {
+  margin-bottom: 50px;
+}
+.synopsis-conteudo p {
+  color: black;
+}
+.synopsis-conteudo .botao {
+  margin-top: 40px;
+}
+.coluna-cont {
+  width: 100%;
+}
+
+.coluna-cont h1 {
+  font-size: 7vmin;
+  color: #134074;
+  font-family: fonte;
+}
+.coluna-cont .linha {
+  margin-bottom: 50px;
+}
+.coluna-cont p {
+  padding: 0;
+  margin: 30px auto;
+}
+.coluna-cont .botao {
+  display: flex;
+  align-items: center;
+}
+footer {
+  width: 100%;
+  min-height: 100px;
+  padding: 20px 80px;
+  margin: 0;
+  background: #134074;
+  text-align: center;
+}
+footer p {
+  color: whitesmoke;
+  margin: 20px auto;
+  padding: 20x auto;
+}
+
+/*MOBILE*/
+
+@media only screen and (max-width: 850px) {
+  .botao-menu {
+    display: block;
+  }
+
+  .navbar {
+    padding: 0;
+  }
+  .logo {
+    position: absolute;
+    top: 30px;
+    left: 30px;
+  }
+  .nav-links {
+    flex-direction: column;
+    width: 100%;
+    height: 100vh;
+    justify-content: center;
+    background: #8da9ca;
+    margin-top: -900px;
+    transition: all 0.5s ease;
+  }
+  .mobile-menu {
+    margin-top: 0px;
+    border-bottom-right-radius: 30%;
+  }
+  .nav-links li {
+    margin: 30px auto;
+  }
+  /*aba dois*/
+  .row {
+    flex-direction: column;
+  }
+  .row .coluna {
+    margin: 20px auto;
+  }
+  .coluna img {
+    max-width: 90%;
+  }
+  /*Aba três*/
+  .synopsis-conteudo {
+    width: 100%;
+  }
+  .curious .coluna {
+    width: 100%;
+  }
+  .galeria {
+    justify-content: center;
+    align-items: center;
+  }
+  .galeria img {
+    width: 100%;
+  }
+  footer {
+    padding: 10px;
+  }
+}
+
+/*animations*/
+.botao:hover {
+  background: whitesmoke;
+  color: 0D3B66;
+  box-shadow: 2px 2px 5px #00000056;
+}
